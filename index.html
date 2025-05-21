@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Magical Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor-trail"></div>
+
+    <header>
+        <nav>
+            <div class="logo">✨Lokesh</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <div class="text-content">
+                    <h1 class="magic-text">Hi, I'm <span class="name-highlight">Software Developer</span></h1>
+                    <h2 class="typing-text">Full Stack Developer</h2>
+                    <p class="intro-text">I create magical web experiences with code</p>
+                    <a href="#projects" class="cta-button">See My Work <i class="fas fa-arrow-down"></i></a>
+                    <a href="https://drive.google.com/file/d/1YKZDc66aGqfLsxjgcPpd3LHoi_l8BFmv/view?usp=drivesdk "
+                        download class="cta-button resume-button">
+                        Download Resume <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="image-content">
+                    <div class="photo-frame">
+                        <img src="loky.jpg" alt="Developer Photo" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrows">
+                    <span class="arrow"></span>
+                    <span class="arrow"></span>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="underline-magic"></div>
+            </div>
+            <div class="about-content">
+                <div class="education">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>B.Tech in Computer Science</h4>
+                            <p class="timeline-date">2020 - 2024</p>
+                            <p>Magical University of Technology</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3><i class="fas fa-code"></i> Skills</h3>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <div class="skill-bar" data-skill="HTML/CSS/Boostrap">95%</div>
+                            <div class="skill-bar" data-skill="JavaScript">90%</div>
+                            <div class="skill-bar" data-skill="React">85%</div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Backend </h4>
+                            <div class="skill-bar" data-skill="Node.js">88%</div>
+                            <div class="skill-bar" data-skill="Express.js">88%</div>
+                            <div class="skill-bar" data-skill="java">80%</div>
+                            <div class="skill-bar" data-skill="MongoDB">85%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2>My Magical Projects</h2>
+                <div class="underline-magic"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="food-cart.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <h3>E-commerce Platform</h3>
+                            <div class="project-hover-content">
+                                <p>Full-featured online store with Store management</p>
+                                <button class="view-project" data-project="1">View Project <i
+                                        class="fas fa-arrow-right arrow-animate"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="flappy-bird.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <h3>Desktop-Based Game – Flappy Bird</h3>
+                            <div class="project-hover-content">
+                                <p>Built a web-based game with
+                                    physics and scoring mechanisms</p>
+
+                                <button class="view-project" data-project="2">View Project <i
+                                        class="fas fa-arrow-right arrow-animate"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="rock-paper-scissor.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <h3>Rock Paper Scissors Game</h3>
+                            <div class="project-hover-content">
+                                <p>Designed an interactive game with a responsive layout</p>
+
+                                <button class="view-project" data-project="3">View Project <i
+                                        class="fas fa-arrow-right arrow-animate"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 4">
+                        <div class="project-overlay">
+                            <h3>Weather Dashboard</h3>
+                            <div class="project-hover-content">
+                                <p>Real-time weather data visualization</p>
+                                <button class="view-project" data-project="4">View Project <i class="fas fa-arrow-right arrow-animate"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <div class="underline-magic"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p><i class="fas fa-envelope"></i> lokeshluc6@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 9390078202</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Yanam,pondicherry</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Tadilokesh/"><i class="fab fa-github"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/tadi-lokesh-b76b8b293/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Tadi Lokesh <i class="fas fa-magic"></i> Software Developer Portfolio</p>
+    </footer>
+
+    <!-- Project Modals -->
+    <div class="project-modal" id="project-modal-1">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>E-commerce Platform</h2>
+            <div class="modal-body">
+                <img src="food-cart.png" alt="Project 1 Detailed">
+                <div class="project-details">
+                    <h3>Project Details</h3>
+                    <p>A full-featured online store, modern, responsive web interface for seamless user interactions
+                        product management, and user
+                        accounts.</p>
+                    <p><strong>Technologies:</strong> React.js</p>
+                    <a href="https://food-del-35zn.vercel.app/" class="live-demo">Live Demo <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal" id="project-modal-2">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Desktop-Based Game – Flappy Bird</h2>
+            <div class="modal-body">
+                <img src="flappy-bird.png" alt="Project 2 Detailed">
+                <div class="project-details">
+                    <h3>Project Details</h3>
+                    <p>Built a web-based game with
+                        physics and scoring mechanisms</p>
+                    <p><strong>Technologies:</strong> Html,Css And Javascript</p>
+                    <a href="https://tadilokesh.github.io/Flippy-Bird_Game/" class="live-demo">Live Demo <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal" id="project-modal-3">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Rock Paper Scissors Game</h2>
+            <div class="modal-body">
+                <img src="rock-paper-scissor.png" alt="Project 3 Detailed">
+                <div class="project-details">
+                    <h3>Project Details</h3>
+                    <p>Designed an interactive game with a responsive layout and immediate feedback.
+                    </p>
+                    <p><strong>Technologies:</strong> Html,Css And Javascript</p>
+                    <a href="https://tadilokesh.github.io/rock-paper-scissor/" class="live-demo">Live Demo <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="project-modal" id="project-modal-4">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Weather Dashboard</h2>
+            <div class="modal-body">
+                <img src="https://via.placeholder.com/800x500" alt="Project 4 Detailed">
+                <div class="project-details">
+                    <h3>Project Details</h3>
+                    <p>A weather visualization dashboard that displays real-time and forecast data with interactive maps
+                        and charts.</p>
+                    <p><strong>Technologies:</strong> React, D3.js, Weather API, Mapbox</p>
+                    <a href="#" class="live-demo">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
